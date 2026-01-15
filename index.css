@@ -182,7 +182,7 @@ body {
 .hero {
   min-height: 100vh;
   width: 100%;
-  background-image: url("./images/headerimg.png");
+  background-image: url("headerimg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -525,3 +525,4 @@ footer,
     animation: none !important;
   }
 }
+
