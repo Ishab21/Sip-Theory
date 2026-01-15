@@ -1,15 +1,20 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sip Theory</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,8 +24,8 @@
 
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">About</a>
-        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="./index.html">About</a>
+        <a class="nav-link" href="./menu.html">Menu</a>
 
         <div class="brand">
           <div class="brand-top">Origin from</div>
@@ -28,8 +33,8 @@
           <div class="brand-sub">Boba shop</div>
         </div>
 
-        <a class="nav-link" href="location.html">Locations</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="./location.html">Locations</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
       </nav>
     </header>
 
@@ -39,14 +44,13 @@
         <p class="tagline">An Unforgettable Taste</p>
       </section>
     </main>
-
     <section class="about-section" id="about">
       <h2 class="about-title reveal">About Us</h2>
       <div class="about-divider"></div>
 
       <div class="about-frame">
         <img
-          src="aboutimg.png"
+          src="./images/aboutimg.png"
           alt="Inside Sip Theory boba shop"
           class="about-img"
         />
@@ -54,18 +58,28 @@
 
       <p class="about-text">
         At Sip Theory, every drink is crafted as a ritual of calm—an invitation
-        to slow down, breathe deep, and savor the moment.
+        to slow down, breathe deep, and savor the moment. Inspired by the
+        serenity of a spa and the warmth of a cozy hideaway, our boba is not
+        just made, but thoughtfully composed. Each cup is layered with
+        intention: gentle smoke that drifts like incense, delicate textures that
+        unfold sip by sip, and flavors that reveal their depth gradually, never
+        all at once.
       </p>
-
       <p class="about-text">
-        We believe a drink should feel like an experience.
+        We believe a drink should feel like an experience. From the first glance
+        to the last sip, our blends are designed to awaken the senses—soft foam
+        meeting bold tea, subtle sweetness balanced with smoky undertones, and
+        pearls resting like hidden treasures at the bottom of the glass. Every
+        layer tells a story, encouraging you to discover something new beneath
+        the surface. Rooted in craft, comfort, and quiet luxury, Sip Theory
+        transforms boba into an art form—where relaxation meets curiosity, and
+        every sip feels unforgettable.
       </p>
     </section>
-
     <section class="drinks-section">
       <div class="drink-overlay">
         <img
-          src="drinksdisplay.png"
+          src="./images/drinksdisplay.png"
           class="drinks-img"
           alt="Drink lineup"
         />
@@ -81,7 +95,7 @@
     <section class="tea-story">
       <div class="tea-block">
         <img
-          src="pouringhottea.png"
+          src="./images/pouringhottea.png"
           alt="Pouring hot tea"
           class="tea-img"
         />
@@ -89,17 +103,20 @@
           <h3>Crafted from Whole Leaves</h3>
           <p>
             We begin with hand-selected tea leaves, gently steeped to preserve
-            their natural oils.
+            their natural oils, aromas, and depth of flavor. Each pour releases
+            a quiet warmth—soft, layered, and intentional.
           </p>
         </div>
       </div>
 
       <div class="tea-block reverse">
-        <img src="tea.png" alt="Smoky tea leaves" class="tea-img" />
+        <img src="./images/tea.png" alt="Smoky tea leaves" class="tea-img" />
         <div class="tea-text">
           <h3>Blended with Purpose</h3>
           <p>
-            Our blends are composed like music—smoky notes, floral hints.
+            Our blends are composed like music—smoky notes, floral hints, subtle
+            sweetness, and velvety finishes. Every ingredient is chosen to melt
+            seamlessly into the next, creating a drink that unfolds sip by sip.
           </p>
         </div>
       </div>
@@ -111,7 +128,8 @@
           <h2>Sip Theory</h2>
           <p>
             Sip Theory is a concept boba brand centered around ritual, calm, and
-            sensory storytelling.
+            sensory storytelling. Every drink is crafted to slow you down and
+            savor the moment.
           </p>
         </div>
 
@@ -129,10 +147,44 @@
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
           <a href="#">Order Online</a>
+
+          <div class="footer-socials">
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+          </div>
+        </div>
+
+        <div class="footer-award">
+          <p>Crafted with intention.</p>
+          <div class="award-box">EST. 2025</div>
         </div>
       </div>
     </footer>
-  </body>
-</html>
 
+    <script>
+      // Scroll-triggered reveal animations
+      const revealEls = document.querySelectorAll(".reveal, .reveal-left");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            } else {
+              // If you want it to animate again when scrolling back:
+              entry.target.classList.remove("is-visible");
+            }
+          });
+        },
+        {
+          threshold: 0.25, // triggers when ~25% is visible
+          rootMargin: "0px 0px -10% 0px", // starts slightly before center
+        }
+      );
+
+      revealEls.forEach((el) => observer.observe(el));
+    </script>
+  </body>
 </html>
