@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -82,15 +84,15 @@ body {
 }
 
 .menu-title {
+  font-family: "Playfair Display", serif;
   margin: 0 0 40px;
   margin-top: 10%;
   text-align: center;
   font-size: clamp(48px, 6vw, 92px);
   font-weight: 1000;
   letter-spacing: 0.5px;
-  color: #f3d43b; /* gold */
+  color: #fdfdfd;
 }
-
 .menu-item {
   display: flex;
   align-items: center;
@@ -202,4 +204,195 @@ body {
   color: #1f252b;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(243, 212, 59, 0.3);
+}
+.site-footer {
+  width: 100%;
+  background: #2b2422; /* your brown */
+  padding: 80px 0;
+}
+
+.footer-container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.9fr 0.8fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.footer-brand h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  max-width: 420px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.footer-column a {
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-bottom: 12px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column a:hover {
+  opacity: 1;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.footer-award {
+  text-align: center;
+}
+
+.award-box {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px 24px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 300px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
+  }
+}
+/* ===== Scroll reveal animations (Menu) ===== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  will-change: transform, opacity;
+}
+
+.reveal-row {
+  opacity: 0;
+  transform: translateY(26px);
+  will-change: transform, opacity;
+}
+
+.reveal.is-visible {
+  animation: floatUp 0.75s ease-out forwards;
+}
+
+.reveal-row.is-visible {
+  animation: liftIn 0.85s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* Make images feel "alive" (subtle hover + soft glow) */
+.drink-img {
+  transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+
+.menu-item:hover .drink-img {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 26px 85px rgba(0, 0, 0, 0.6);
+}
+
+/* Button feels extra luxe */
+.order-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.order-btn::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(243, 212, 59, 0.28),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.order-btn:hover::after {
+  opacity: 1;
+}
+
+/* Keyframes */
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes liftIn {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-row {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .drink-img,
+  .menu-item:hover .drink-img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+.menu-item.reveal-row:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.menu-item.reveal-row:nth-of-type(2) {
+  animation-delay: 0.05s;
+}
+.menu-item.reveal-row:nth-of-type(3) {
+  animation-delay: 0.08s;
+}
+.menu-item.reveal-row:nth-of-type(4) {
+  animation-delay: 0.11s;
+}
+.menu-item.reveal-row:nth-of-type(5) {
+  animation-delay: 0.14s;
 }
