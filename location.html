@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sip Theory | Locations</title>
 
-    <!-- Fonts -->
+    <!-- Fonts (match your other pages if you already use these) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +17,11 @@
   </head>
 
   <body>
+    <!-- Optional: keep your existing site header/nav if you have one -->
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">About</a>
-        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="./index.html">About</a>
+        <a class="nav-link" href="./menu.html">Menu</a>
 
         <div class="brand">
           <div class="brand-top">Origin from</div>
@@ -28,8 +29,8 @@
           <div class="brand-sub">Boba shop</div>
         </div>
 
-        <a class="nav-link" href="location.html">Locations</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="./location.html">Locations</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
       </nav>
     </header>
 
@@ -38,8 +39,8 @@
       <section class="locations-hero">
         <h1 class="page-title reveal">Locations</h1>
         <p class="page-subtitle reveal">
-          Wherever you are, there’s a Sip Theory nearby—crafted with whole leaves,
-          smoky notes, and quiet luxury.
+          Wherever you are, there’s a Sip Theory nearby—crafted with whole
+          leaves, smoky notes, and quiet luxury.
         </p>
       </section>
 
@@ -47,23 +48,23 @@
       <section class="map-section">
         <div class="map-frame reveal">
           <img
-            src="map.png"
+            src="./images/map.png"
             alt="Sip Theory locations map"
             class="map-img"
           />
         </div>
 
         <div class="map-stats">
-          <div class="stat reveal">
-            <div class="stat-number">24</div>
+          <div class="stat">
+            <div class="stat-numberreveal">24</div>
             <div class="stat-label">Stores</div>
           </div>
-          <div class="stat reveal">
-            <div class="stat-number">18</div>
+          <div class="stat">
+            <div class="stat-number reveal">18</div>
             <div class="stat-label">States</div>
           </div>
-          <div class="stat reveal">
-            <div class="stat-number">2</div>
+          <div class="stat">
+            <div class="stat-number reveal">2</div>
             <div class="stat-label">New this season</div>
           </div>
         </div>
@@ -114,10 +115,27 @@
           <!-- DC -->
           <article class="location-card reveal-left">
             <div class="card-top">
-              <h3>Washington, DC</h3>
-              <span class="pill">Capitol</span>
+              <h3>Georgetown, DC</h3>
+              <span class="pill">New</span>
             </div>
-            <p class="addr">160 Mistwood Ave, Washington, DC 20001</p>
+            <p class="addr">203 Velvet Ln, Washington, DC 20007</p>
+            <p class="meta">
+              <span>Mon–Sat: 10–9</span>
+              <span>Sun: 11–8</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn" href="#">Order Ahead</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </article>
+
+          <!-- Chicago -->
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Chicago, IL</h3>
+              <span class="pill">Downtown</span>
+            </div>
+            <p class="addr">51 Lapsang Blvd, Chicago, IL 60611</p>
             <p class="meta">
               <span>Mon–Thu: 10–9</span>
               <span>Fri–Sun: 10–10</span>
@@ -128,94 +146,395 @@
             </div>
           </article>
 
-          <!-- Orlando -->
+          <!-- Austin -->
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Austin, TX</h3>
+              <span class="pill">Top Rated</span>
+            </div>
+            <p class="addr">9 Campfire Ct, Austin, TX 78701</p>
+            <p class="meta">
+              <span>Daily: 11–10</span>
+              <span>Patio Seating</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn" href="#">Order Ahead</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </article>
+
+          <!-- Denver -->
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Denver, CO</h3>
+              <span class="pill">Cozy</span>
+            </div>
+            <p class="addr">77 Slate Rd, Denver, CO 80202</p>
+            <p class="meta">
+              <span>Mon–Thu: 10–8</span>
+              <span>Fri–Sun: 10–9</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn" href="#">Order Ahead</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </article>
+
+          <!-- Miami -->
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Miami, FL</h3>
+              <span class="pill">Beachside</span>
+            </div>
+            <p class="addr">120 Drift Ave, Miami, FL 33139</p>
+            <p class="meta">
+              <span>Daily: 11–11</span>
+              <span>Summer Specials</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn" href="#">Order Ahead</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </article>
+
+          <!-- LA -->
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Los Angeles, CA</h3>
+              <span class="pill">West Coast</span>
+            </div>
+            <p class="addr">33 Smoke &amp; Silk Dr, Los Angeles, CA 90012</p>
+            <p class="meta">
+              <span>Mon–Thu: 11–9</span>
+              <span>Fri–Sun: 11–10</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn" href="#">Order Ahead</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </article>
+
+          <!-- Seattle -->
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Seattle, WA</h3>
+              <span class="pill">Seasonal</span>
+            </div>
+            <p class="addr">6 Fog Harbor Way, Seattle, WA 98101</p>
+            <p class="meta">
+              <span>Mon–Fri: 10–8</span>
+              <span>Sat–Sun: 10–9</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn" href="#">Order Ahead</a>
+              <a class="btn ghost" href="#">View Details</a>
+            </div>
+          </article>
+          <!-- NEW LOCATIONS (15 more) -->
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Chicago, IL</h3>
+              <span class="tag">Midwest</span>
+            </div>
+            <p class="address">21 Ember Loop, Chicago, IL 60611</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–9</li>
+              <li>Fri–Sun: 10–10</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Madison, WI</h3>
+              <span class="tag">Campus</span>
+            </div>
+            <p class="address">88 Matcha Ave, Madison, WI 53703</p>
+            <ul class="hours">
+              <li>Daily: 11–9</li>
+              <li>Late Fri: 11–11</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Denver, CO</h3>
+              <span class="tag">Mountain</span>
+            </div>
+            <p class="address">6 Smokewood St, Denver, CO 80202</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–8</li>
+              <li>Fri–Sun: 10–9</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Las Vegas, NV</h3>
+              <span class="tag">Late Night</span>
+            </div>
+            <p class="address">777 Velvet Rd, Las Vegas, NV 89109</p>
+            <ul class="hours">
+              <li>Sun–Thu: 12–12</li>
+              <li>Fri–Sat: 12–2am</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Philadelphia, PA</h3>
+              <span class="tag">Historic</span>
+            </div>
+            <p class="address">14 Lantern St, Philadelphia, PA 19106</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–9</li>
+              <li>Fri–Sun: 10–10</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Harrisburg, PA</h3>
+              <span class="tag">Capitol</span>
+            </div>
+            <p class="address">9 Driftwood Way, Harrisburg, PA 17101</p>
+            <ul class="hours">
+              <li>Mon–Fri: 10–8</li>
+              <li>Sat–Sun: 11–8</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Columbus, OH</h3>
+              <span class="tag">Popular</span>
+            </div>
+            <p class="address">52 Silk St, Columbus, OH 43215</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–9</li>
+              <li>Fri–Sun: 10–10</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Indianapolis, IN</h3>
+              <span class="tag">Downtown</span>
+            </div>
+            <p class="address">18 Mist Blvd, Indianapolis, IN 46204</p>
+            <ul class="hours">
+              <li>Mon–Fri: 10–8</li>
+              <li>Sat–Sun: 11–9</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Louisville, KY</h3>
+              <span class="tag">Southern</span>
+            </div>
+            <p class="address">33 Saffron Dr, Louisville, KY 40202</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–8</li>
+              <li>Fri–Sun: 10–9</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Raleigh, NC</h3>
+              <span class="tag">New</span>
+            </div>
+            <p class="address">5 Jade St, Raleigh, NC 27601</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–8</li>
+              <li>Fri–Sun: 10–9</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Richmond, VA</h3>
+              <span class="tag">Riverside</span>
+            </div>
+            <p class="address">70 Smoke &amp; Cedar, Richmond, VA 23219</p>
+            <ul class="hours">
+              <li>Mon–Fri: 10–8</li>
+              <li>Sat–Sun: 11–9</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
+          <article class="location-card reveal-left">
+            <div class="card-top">
+              <h3>Washington, DC</h3>
+              <span class="tag">Capitol</span>
+            </div>
+            <p class="address">160 Mistwood Ave, Washington, DC 20001</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–9</li>
+              <li>Fri–Sun: 10–10</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
+            </div>
+          </article>
+
           <article class="location-card reveal-left">
             <div class="card-top">
               <h3>Orlando, FL</h3>
-              <span class="pill">Sunshine</span>
+              <span class="tag">Sunshine</span>
             </div>
-            <p class="addr">44 Pearl St, Orlando, FL 32801</p>
-            <p class="meta">
-              <span>Daily: 11–10</span>
-              <span>Late Sat: 11–11</span>
-            </p>
+            <p class="address">44 Pearl St, Orlando, FL 32801</p>
+            <ul class="hours">
+              <li>Daily: 11–10</li>
+              <li>Late Sat: 11–11</li>
+            </ul>
             <div class="card-actions">
-              <a class="btn" href="#">Order Ahead</a>
-              <a class="btn ghost" href="#">View Details</a>
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
             </div>
           </article>
 
-          <!-- Tallahassee -->
           <article class="location-card reveal-left">
             <div class="card-top">
               <h3>Tallahassee, FL</h3>
-              <span class="pill">Capitol</span>
+              <span class="tag">Capitol</span>
             </div>
-            <p class="addr">10 Steep St, Tallahassee, FL 32301</p>
-            <p class="meta">
-              <span>Mon–Fri: 10–8</span>
-              <span>Sat–Sun: 11–8</span>
-            </p>
+            <p class="address">10 Steep St, Tallahassee, FL 32301</p>
+            <ul class="hours">
+              <li>Mon–Fri: 10–8</li>
+              <li>Sat–Sun: 11–8</li>
+            </ul>
             <div class="card-actions">
-              <a class="btn" href="#">Order Ahead</a>
-              <a class="btn ghost" href="#">View Details</a>
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
             </div>
           </article>
 
-          <!-- Cambridge -->
           <article class="location-card reveal-left">
             <div class="card-top">
               <h3>Cambridge, MA</h3>
-              <span class="pill">New</span>
+              <span class="tag">New</span>
             </div>
-            <p class="addr">11 Harbor Ln, Cambridge, MA 02139</p>
-            <p class="meta">
-              <span>Mon–Thu: 10–9</span>
-              <span>Fri–Sun: 10–10</span>
-            </p>
+            <p class="address">11 Harbor Ln, Cambridge, MA 02139</p>
+            <ul class="hours">
+              <li>Mon–Thu: 10–9</li>
+              <li>Fri–Sun: 10–10</li>
+            </ul>
             <div class="card-actions">
-              <a class="btn" href="#">Order Ahead</a>
-              <a class="btn ghost" href="#">View Details</a>
+              <a class="btn primary" href="#">Order Ahead</a>
+              <a class="btn" href="#">View Details</a>
             </div>
           </article>
         </div>
       </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <h2>Sip Theory</h2>
-          <p>
-            Sip Theory is a concept boba brand centered around ritual, calm, and
-            sensory storytelling. Every drink is crafted to slow you down and
-            savor the moment.
-          </p>
-        </div>
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <h2>Sip Theory</h2>
+            <p>
+              Sip Theory is a concept boba brand centered around ritual, calm,
+              and sensory storytelling. Every drink is crafted to slow you down
+              and savor the moment.
+            </p>
+          </div>
 
-        <div class="footer-column">
-          <h3>ABOUT</h3>
-          <a href="index.html">About</a>
-          <a href="menu.html">Menu</a>
-          <a href="location.html">Location</a>
-          <a href="contact.html">Contact</a>
-        </div>
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <a href="index.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="location.html">Location</a>
+            <a href="contact.html">Contact</a>
+          </div>
 
-        <div class="footer-column">
-          <h3>CONTACT</h3>
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Order Online</a>
+          <div class="footer-column">
+            <h3>CONTACT</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Order Online</a>
 
-          <div class="footer-socials">
-            <span>●</span>
-            <span>●</span>
-            <span>●</span>
-            <span>●</span>
+            <div class="footer-socials">
+              <span>●</span>
+              <span>●</span>
+              <span>●</span>
+              <span>●</span>
+            </div>
+          </div>
+
+          <div class="footer-award">
+            <p>Crafted with intention.</p>
+            <div class="award-box">EST. 2025</div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
+
+    <script>
+      // Minimal scroll reveals
+      const revealEls = document.querySelectorAll(".reveal, .reveal-left");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("is-visible");
+            else entry.target.classList.remove("is-visible"); // replay on scroll back
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -25% 0px", // triggers earlier (not slow)
+        }
+      );
+
+      revealEls.forEach((el) => observer.observe(el));
+    </script>
   </body>
 </html>
